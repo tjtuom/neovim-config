@@ -1,9 +1,10 @@
 (module config.plugin.theme
-  {autoload {theme github-theme}})
+  {autoload {theme catppuccin}})
 
-;; Theme variants: dark/dimmed/dark_default/dark_colorblind/light/light_default/light_colorblind
-
-(theme.setup {:theme_style "dark"
-              ;; :colors {:bg "#f8f2e6"}
-              ;; :comment_style "italic"
-              })
+(theme.setup {:flavour "mocha"
+              :integrations {:cmp true
+                             :gitsigns true
+                             :nvimtree true
+                             :telescope true
+                             :treesitter true
+                             :which_key true}})

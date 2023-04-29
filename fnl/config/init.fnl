@@ -220,3 +220,6 @@
 
 ;import plugin.fnl
 (require :config.plugin)
+
+; Hack around plugins not getting themed properly
+(nvim.ex.autocmd "BufEnter" "*" "colorscheme catppuccin-mocha")
