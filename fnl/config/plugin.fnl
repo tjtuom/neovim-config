@@ -70,6 +70,10 @@
 
   ;;;; Navigation
 
+  :alexghergh/nvim-tmux-navigation {:mod :tmux-nav}
+
+  :phaazon/hop.nvim {:mod :hop}
+
   ;; project management (lua plugin)
   ;; projects cant be created on the fly or renamed it seems
   ;; use project telescope extention,
@@ -146,8 +150,10 @@
   :Olical/conjure {:mod :conjure}
 
   ;; sexp and vim-style editing
-  ;; :guns/vim-sexp {:mod :sexp}
+  :guns/vim-sexp {:mod :sexp}
   :windwp/nvim-autopairs {:mod :autopairs}
+
+  :eraserhd/parinfer-rust {}
 
   :tpope/vim-abolish {}
   ;; :tpope/vim-commentary {}
@@ -215,6 +221,6 @@
   :jamessan/vim-gnupg {}
 
   :akinsho/toggleterm.nvim {:tag "*"
-                            :mod :toggleterm}
+                            :mod :toggleterm})
 
-)
+
