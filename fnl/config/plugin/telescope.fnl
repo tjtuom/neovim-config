@@ -9,7 +9,10 @@
               ;; Esc closes telescope popup immediately
               ;; otherwise Esc first goes to normal mode
               ;; :mappings {:i {:<esc> actions.close}}
-              }
+
+              :mappings {:i {:<C-j> actions.move_selection_next
+                             :<C-k> actions.move_selection_previous}}}
+              
    :extensions {:file_browser {:hidden true}  ;; C-h/h toggle in popup
                 :env {}
                 :heading {:treesitter true}
